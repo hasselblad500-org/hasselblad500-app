@@ -1,15 +1,15 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: assadldn-app
-  namespace: assadldn
+  name: hasselblad500-app
+  namespace: hasselblad500
   labels:
-    app: assadldn-app
-    env: assadldn
+    app: hasselblad500-app
+    env: hasselblad500
 spec:
   selector:
     matchLabels:
-      app: assadldn-app
+      app: hasselblad500-app
   strategy:
     type: RollingUpdate
     rollingUpdate:
@@ -19,10 +19,10 @@ spec:
   template:
     metadata:
       labels:
-        app: assadldn-app
+        app: hasselblad500-app
     spec:
       containers:
-      - name: assadldn-app
+      - name: hasselblad500-app
         image: {{ IMAGE_CONTAINER }}
         #image: docker.io/aquasaemea/saemea-app:latest
         imagePullPolicy: Always

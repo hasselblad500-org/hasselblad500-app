@@ -2,13 +2,13 @@ apiVersion: v1
 kind: Service
 metadata:
   labels:
-    name: assadldn-app
-  name: assadldn-app-svc
-  namespace: assadldn
+    name: hasselblad500-app
+  name: hasselblad500-app-svc
+  namespace: hasselblad500
 spec:
   type: LoadBalancer
   selector:
-    app: assadldn-app
+    app: hasselblad500-app
   ports:
   - name: http
     protocol: TCP

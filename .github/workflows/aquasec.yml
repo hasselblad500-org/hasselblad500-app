@@ -1,11 +1,11 @@
 name: Hasselblad500 APP 
 on:
   push:
-    branches:
-      - main
+   # branches:
+    #- main
   pull_request:
-    branches: 
-      - main
+   # branches: 
+    #  - main
       # comment
       #testing8
       
